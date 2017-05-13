@@ -1,0 +1,12 @@
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\MatchiPostDataService.dll.config
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\MatchiPostDataService.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\MatchiPostDataService.pdb
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\DataProvider.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\EntityFramework.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\System.Spatial.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\DataProvider.pdb
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\EntityFramework.xml
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\bin\Release\System.Spatial.xml
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\obj\Release\MatchiPostDataService.csprojResolveAssemblyReference.cache
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\obj\Release\MatchiPostDataService.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiPostDataService\obj\Release\MatchiPostDataService.pdb

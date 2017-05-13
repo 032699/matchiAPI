@@ -1,0 +1,7 @@
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\DataProvider\bin\Release\DataProvider.dll.config
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\DataProvider\bin\Release\DataProvider.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\DataProvider\bin\Release\DataProvider.pdb
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\DataProvider\bin\Release\EntityFramework.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\DataProvider\bin\Release\EntityFramework.xml
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\DataProvider\obj\Release\DataProvider.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\DataProvider\obj\Release\DataProvider.pdb

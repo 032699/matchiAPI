@@ -1,0 +1,10 @@
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\bin\Release\MatchiUserDataService.dll.config
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\bin\Release\MatchiUserDataService.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\bin\Release\MatchiUserDataService.pdb
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\bin\Release\DataProvider.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\bin\Release\EntityFramework.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\bin\Release\DataProvider.pdb
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\bin\Release\EntityFramework.xml
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\obj\Release\MatchiUserDataService.csprojResolveAssemblyReference.cache
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\obj\Release\MatchiUserDataService.dll
+C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiUserService\obj\Release\MatchiUserDataService.pdb

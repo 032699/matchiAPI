@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="matchiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="lookup_table_keys">
+    <Key>
+      <PropertyRef Name="table" />
+    </Key>
+    <Property Name="table" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="updated_date" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="post_categories">
+    <Key>
+      <PropertyRef Name="category_id" />
+    </Key>
+    <Property Name="category_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cat_name" Type="varchar" MaxLength="100" />
+    <Property Name="cat_img_url" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="post_thread">
+    <Key>
+      <PropertyRef Name="thread_id" />
+    </Key>
+    <Property Name="user_id" Type="int" />
+    <Property Name="user_avatar_url" Type="varchar" MaxLength="250" />
+    <Property Name="message" Type="varchar" MaxLength="1000" />
+    <Property Name="sent_date" Type="datetime2" Precision="7" />
+    <Property Name="thread_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="post_types">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type_name" Type="varchar" MaxLength="45" />
+    <Property Name="activity_type_name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="topics">
+    <Key>
+      <PropertyRef Name="topic_id" />
+    </Key>
+    <Property Name="topic_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="200" />
+    <Property Name="img_url" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="user_bookmarks">
+    <Key>
+      <PropertyRef Name="user_bookmark_id" />
+    </Key>
+    <Property Name="user_bookmark_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_post_id" Type="int" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="poster_user_id" Type="bigint" />
+    <Property Name="post_category" Type="varchar" MaxLength="100" />
+    <Property Name="title" Type="varchar" MaxLength="100" />
+    <Property Name="description" Type="varchar" MaxLength="500" />
+    <Property Name="images_url" Type="varchar" MaxLength="200" />
+    <Property Name="like_count" Type="int" />
+    <Property Name="is_reported" Type="int" />
+    <Property Name="date_posted" Type="datetime2" Precision="7" />
+    <Property Name="user_avatar_url" Type="varchar" MaxLength="200" />
+    <Property Name="user_name" Type="varchar" MaxLength="50" />
+    <Property Name="item_price" Type="varchar" MaxLength="50" />
+    <Property Name="user_full_name" Type="varchar" MaxLength="200" />
+    <Property Name="map_address" Type="varchar" MaxLength="200" />
+    <Property Name="latitude" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="longitude" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="post_category_img_url" Type="varchar" MaxLength="200" />
+    <Property Name="post_category_id" Type="int" />
+    <Property Name="post_type_id" Type="int" />
+    <Property Name="topic_id" Type="int" />
+  </EntityType>
+  <EntityType Name="user_followers">
+    <Key>
+      <PropertyRef Name="user_followers_id" />
+    </Key>
+    <Property Name="user_id" Type="int" />
+    <Property Name="follower_user_id" Type="int" />
+    <Property Name="follower_user_handle" Type="varchar" MaxLength="45" />
+    <Property Name="follower_user_avatar" Type="varchar" MaxLength="200" />
+    <Property Name="follower_full_name" Type="varchar" MaxLength="100" />
+    <Property Name="user_followers_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="flag" Type="bit" />
+    <Property Name="user_handle" Type="varchar" MaxLength="100" />
+    <Property Name="user_full_name" Type="varchar" MaxLength="45" />
+    <Property Name="user_avatar" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="user_following">
+    <Key>
+      <PropertyRef Name="user_following_id" />
+    </Key>
+    <Property Name="user_id" Type="int" />
+    <Property Name="following_user_id" Type="int" />
+    <Property Name="following_user_handle" Type="varchar" MaxLength="45" />
+    <Property Name="following_user_avatar" Type="varchar" MaxLength="200" />
+    <Property Name="following_full_name" Type="varchar" MaxLength="100" />
+    <Property Name="user_following_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="user_interests">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="topic_name" Type="varchar" MaxLength="100" />
+    <Property Name="topic_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user_locations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="200" />
+    <Property Name="latitude" Type="varchar" MaxLength="45" />
+    <Property Name="longitude" Type="varchar" MaxLength="45" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="image_url" Type="varchar" MaxLength="200" />
+    <Property Name="user_id" Type="int" />
+  </EntityType>
+  <EntityType Name="user_post_likes">
+    <Key>
+      <PropertyRef Name="user_post_like_id" />
+    </Key>
+    <Property Name="user_post_like_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_post_id" Type="int" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="poster_user_id" Type="bigint" />
+    <Property Name="post_category" Type="varchar" MaxLength="100" />
+    <Property Name="title" Type="varchar" MaxLength="100" />
+    <Property Name="description" Type="varchar" MaxLength="500" />
+    <Property Name="images_url" Type="varchar" MaxLength="200" />
+    <Property Name="like_count" Type="int" />
+    <Property Name="is_reported" Type="int" />
+    <Property Name="date_posted" Type="datetime2" Precision="7" />
+    <Property Name="user_avatar_url" Type="varchar" MaxLength="200" />
+    <Property Name="user_name" Type="varchar" MaxLength="50" />
+    <Property Name="item_price" Type="varchar" MaxLength="50" />
+    <Property Name="user_full_name" Type="varchar" MaxLength="200" />
+    <Property Name="map_address" Type="varchar" MaxLength="200" />
+    <Property Name="latitude" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="longitude" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="post_category_img_url" Type="varchar" MaxLength="200" />
+    <Property Name="post_category_id" Type="int" />
+    <Property Name="post_type_id" Type="int" />
+    <Property Name="topic_id" Type="int" />
+  </EntityType>
+  <EntityType Name="user_posts">
+    <Key>
+      <PropertyRef Name="user_post_id" />
+    </Key>
+    <Property Name="user_post_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="bigint" />
+    <Property Name="post_category" Type="varchar" MaxLength="100" />
+    <Property Name="title" Type="varchar" MaxLength="100" />
+    <Property Name="description" Type="varchar" MaxLength="500" />
+    <Property Name="images_url" Type="varchar" MaxLength="1000" />
+    <Property Name="like_count" Type="int" />
+    <Property Name="is_reported" Type="int" />
+    <Property Name="date_posted" Type="datetime2" Precision="7" />
+    <Property Name="user_avatar_url" Type="varchar" MaxLength="200" />
+    <Property Name="user_name" Type="varchar" MaxLength="50" />
+    <Property Name="item_price" Type="varchar" MaxLength="50" />
+    <Property Name="user_full_name" Type="varchar" MaxLength="200" />
+    <Property Name="map_address" Type="varchar" MaxLength="200" />
+    <Property Name="latitude" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="longitude" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="post_category_img_url" Type="varchar" MaxLength="200" />
+    <Property Name="post_category_id" Type="int" />
+    <Property Name="post_type_id" Type="int" />
+    <Property Name="topic_id" Type="int" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_handle" Type="varchar" MaxLength="100" />
+    <Property Name="full_name" Type="varchar" MaxLength="200" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="password" Type="varchar" MaxLength="45" />
+    <Property Name="date_joined" Type="varchar" MaxLength="45" />
+    <Property Name="follower_count" Type="int" />
+    <Property Name="hearts_count" Type="varchar" MaxLength="45" />
+    <Property Name="post_count" Type="varchar" MaxLength="45" />
+    <Property Name="is_active" Type="bit" />
+    <Property Name="user_avatar_url" Type="varchar" MaxLength="300" />
+    <Property Name="user_type_id" Type="int" />
+    <Property Name="about" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <Function Name="getNearbyPosts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="longitude" Type="decimal" Mode="In" />
+    <Parameter Name="latitude" Type="decimal" Mode="In" />
+    <Parameter Name="distance_in_km" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="matchiModelStoreContainer">
+    <EntitySet Name="lookup_table_keys" EntityType="Self.lookup_table_keys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="post_categories" EntityType="Self.post_categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="post_thread" EntityType="Self.post_thread" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="post_types" EntityType="Self.post_types" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="topics" EntityType="Self.topics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_bookmarks" EntityType="Self.user_bookmarks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_followers" EntityType="Self.user_followers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_following" EntityType="Self.user_following" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_interests" EntityType="Self.user_interests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_locations" EntityType="Self.user_locations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_post_likes" EntityType="Self.user_post_likes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_posts" EntityType="Self.user_posts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
