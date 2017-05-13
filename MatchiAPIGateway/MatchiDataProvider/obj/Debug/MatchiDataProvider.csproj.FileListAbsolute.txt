@@ -1,8 +1,0 @@
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\obj\Debug\MatchiDataProvider.csprojResolveAssemblyReference.cache
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\bin\Debug\MatchiDataProvider.dll.config
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\bin\Debug\MatchiDataProvider.dll
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\bin\Debug\MatchiDataProvider.pdb
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\bin\Debug\EntityFramework.dll
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\bin\Debug\EntityFramework.xml
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\obj\Debug\MatchiDataProvider.dll
-C:\Users\MacBookWin10\OneDrive\MatchiAPIGateway\MatchiDataProvider\obj\Debug\MatchiDataProvider.pdb
